@@ -1,0 +1,323 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap";
+
+body{
+    font-family: Poppins, sans-serif !important;
+    background-color: #0c1022;
+    height: 100vh;
+    margin: 0px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    display: flex !important;
+    align-items: center !important;
+}
+
+.contenedor-iniciar-sesion{
+    padding: 20px 30px;
+    position: absolute;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+}
+
+.banner{
+    width: 350px;
+    border-radius: 3px;
+}
+
+.contenedor-campo{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    border: none;
+}
+
+.campo{
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.boton-iniciar-sesion{
+    display: inline-block; /* Cambia el comportamiento de los enlaces a bloque */
+    width: 350px; /* Ancho */
+    height: 35px; /* Alto */
+    text-align: center; /* Centra el texto dentro del enlace */
+    line-height: 35px; /* Centra el texto verticalmente */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-size: 16px; /* Tamaño del texto */
+    margin-top: 15px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #2f3ede;
+}
+
+.boton-iniciar-sesion:hover{
+    background-color: #212ec0;
+}
+
+.boton-registro{
+    display: inline-block;
+    width: 350px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #009a9a;
+}
+
+.boton-registro:hover{
+    background-color: #008080;
+}
+
+.boton-cancelar{
+    display: inline-block;
+    width: 350px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #e23636;
+}
+
+.boton-cancelar:hover{
+    background-color: #c82424;
+}
+
+.encabezado{
+    height: 81.6px;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    border-bottom: 2px solid white !important;
+    margin-top: 5px;
+}
+
+.encabezado p{
+    margin: 0;
+}
+
+.perfil{
+    margin-left: 250px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cuerpo {
+    flex: 1; /* Empuja el footer al fondo */
+}
+
+.categorias{
+    min-width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.tarjeta-categoria{
+    width: 135px;
+    height: 135px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    background-color: #009a9a;
+    padding: 20px;
+    color: #fff;
+}
+
+.tarjeta-categoria:hover{
+    background-color: #008080;
+}
+
+.icono-categoria{
+    font-size: 60px;
+    padding: 15px 15px 0px 15px;
+}
+
+footer{
+    min-height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 2px solid white;
+}
+
+.tarjeta-empresa {
+    width: 100px;
+    min-height: 100px; /* Cambié 'height' por 'min-height' para que pueda crecer */
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start; /* Mantiene el contenido alineado arriba */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    padding: 10px 30px 0px 30px;
+    color: black;
+}
+
+.tarjeta-empresa:hover{
+    background-color: #f1f1f3;
+}
+
+.tarjeta-empresa p {
+    font-size: 10px;
+    margin-top: 15px;
+    text-align: left;
+    word-wrap: break-word; /* Evita que el texto desborde la tarjeta */
+    white-space: normal; /* Permite saltos de línea */
+}
+
+.logo-empresa{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px 10px 0px 10px;
+}
+
+.encabezado-productos {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important; /* Para distribuir los elementos */
+    padding: 10px !important; /* Ajusta el padding según sea necesario */
+}
+
+.tarjeta-producto{
+    width: 160px;
+    min-height: 100px; /* Cambié 'height' por 'min-height' para que pueda crecer */
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Mantiene el contenido alineado arriba */
+    align-items: start;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    padding: 10px 30px 0px 30px;
+    color: black;
+}
+
+.tarjeta-producto p {
+    font-size: 15px;
+    margin: 10px 0px;
+    padding: 0px;
+    text-align: left;
+    word-wrap: break-word; /* Evita que el texto desborde la tarjeta */
+    white-space: normal; /* Permite saltos de línea */
+}
+
+.boton-agregar{
+    display: inline-block; /* Cambia el comportamiento de los enlaces a bloque */
+    width: 100px; /* Ancho */
+    height: 35px; /* Alto */
+    text-align: center; /* Centra el texto dentro del enlace */
+    line-height: 35px; /* Centra el texto verticalmente */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-size: 15px; /* Tamaño del texto */
+    margin-top: 15px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #2f3ede;
+}
+
+.boton-agregar:hover{
+    background-color: #212ec0;
+}
+
+.modal-productos{
+    padding: 20px 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.tarjeta-carrito{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+}
+
+.tarjeta-carrito div{
+    text-align: left;
+}
+
+.boton-eliminar{
+    color:  gray;
+    font-size: 20px;
+}
+
+.boton-eliminar:hover{
+    color:   #e23636;
+}
+
+.subtotal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 100px;
+}
+
+.tarjeta-detalle-carrito{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 5px;
+}
+
+.detalle-pedido{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 20px;
+}
+
+.tarjeta-detalle-pedido{
+    width: 300px;
+    min-height: 250px; /* Cambié 'height' por 'min-height' para que pueda crecer */
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Mantiene el contenido alineado arriba */
+    align-items: start;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    padding: 10px 30px 0px 30px;
+    color: black;
+}
