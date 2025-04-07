@@ -18,7 +18,9 @@
         <div>
             <img src="{{ asset('img/banner_delivery.jpg') }}" alt="Banner Delivery" class="banner">
         </div>
-        <form action="">
+        <form action="{{route('loginConfirm')}}", method="POST" >
+            @csrf
+            @method('POST')
             <div class="mb-3 contenedor-campo">
                 <label for="correo" class="form-label">Correo electrónico</label>
                 <input type="text" class="form-control campo" id="correo" placeholder="correo electrónico" name="correo">
@@ -28,7 +30,7 @@
                 <input type="password" class="form-control campo" id="contrasenia" placeholder="Contraseña" name="contrasenia">
             </div>
             <div class="mb-3">
-                <a href="{{ route('categorias') }}"  class="boton-iniciar-sesion">Iniciar sesión</a>
+                <button type="submit">Iniciar Sesion</button>
             </div>
             <div class="mb-3">
                 <a href="{{ route('registro') }}" class="boton-registro">Crear nueva cuenta</a>

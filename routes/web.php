@@ -16,3 +16,6 @@ Route::get('/delivery/empresas', [UsuarioController::class, 'empresas'])->name('
 Route::get('/delivery/carrito', [UsuarioController::class, 'carrito'])->name('carrito');
 
 Route::get('/delivery/confirmar/pedido', [UsuarioController::class, 'confirmarPedido'])->name('confirmar_pedido');
+
+#Esta ruta es para llamar al backend y hacer la verificacion de usuario
+Route::post('/confirm',[UsuarioController::class,'loginConfirm'])->name('loginConfirm');
